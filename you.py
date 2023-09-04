@@ -5,7 +5,7 @@ from pytube import YouTube
 from tkinter import filedialog
 url = input("Enter the URL: ")
 
-allStreams = YouTube(url).streams.all()
+allStreams = YouTube(url).streams.all() #all the qualities (streams)
 
 i = 0
 for stream in allStreams:
@@ -19,4 +19,4 @@ folderName = filedialog.askdirectory()
 
 allStreams[streamChoiceIndex-1].download(folderName)
 
-print("Video has been downloaded, YaaaaY!!!!!")
+print("The Video has been downloaded, Yaaaay!")
